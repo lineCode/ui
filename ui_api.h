@@ -16,7 +16,7 @@
 #define UI_API __declspec(dllexport)
 #else
 #define UI_API __declspec(dllimport)
-#endif  // defined(UI_BASE_IMPLEMENTATION)
+#endif  // defined(UI_IMPLEMENTATION)
 
 #else  // defined(WIN32)
 #define UI_API __attribute__((visibility("default")))
