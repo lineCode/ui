@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef UI_AURA_HIT_TEST_H_
-#define UI_AURA_HIT_TEST_H_
+#ifndef VIEWS_WINDOW_HIT_TEST_H_
+#define VIEWS_WINDOW_HIT_TEST_H_
 #pragma once
 
 #if !defined(OS_WIN)
@@ -13,7 +13,8 @@
 // because we have a whole bunch of code that deals with window resizing and
 // such that requires these values.
 enum HitTestCompat {
-  HTBORDER = 1,
+  HTNOWHERE = 0,
+  HTBORDER,
   HTBOTTOM,
   HTBOTTOMLEFT,
   HTBOTTOMRIGHT,
@@ -28,7 +29,6 @@ enum HitTestCompat {
   HTMENU,
   HTMAXBUTTON,
   HTMINBUTTON,
-  HTNOWHERE,
   HTREDUCE,
   HTRIGHT,
   HTSIZE,
@@ -43,4 +43,4 @@ enum HitTestCompat {
 
 #endif  // !defined(OS_WIN)
 
-#endif  // UI_AURA_HIT_TEST_H_
+#endif  // VIEWS_WINDOW_HIT_TEST_H_
